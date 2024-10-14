@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Landscaping Price Calculator</title>
+</head>
+<body>
+    <h2>Landscaping Price Calculator</h2>
+    <form action="calculate" method="post">
+        <label for="address">Address:</label>
+        <input type="text" id="address" name="address" required><br><br>
+
+        <label for="length">Plot Length (in feet):</label>
+        <input type="number" id="length" name="length" required><br><br>
+
+        <label for="width">Plot Width (in feet):</label>
+        <input type="number" id="width" name="width" required><br><br>
+
+        <label for="grass">Grass Type:</label>
+        <select id="grass" name="grass">
+            <option value="fescue">Fescue ($0.05/sq ft)</option>
+            <option value="bentgrass">Bentgrass ($0.02/sq ft)</option>
+            <option value="campus">Campus ($0.01/sq ft)</option>
+        </select><br><br>
+
+        <label for="trees">Number of Trees:</label>
+        <input type="number" id="trees" name="trees" required><br><br>
+
+        <input type="submit" value="Calculate Price">
+    </form>
+</body>
+</html>
